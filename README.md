@@ -22,7 +22,18 @@ Rabbit simulation task
 * Communication - talked over eachother
 * Initially not working as a team
 
-## Sprint 2 (15.05 - 15.45, 27 Jan 2020)
-* Creating abstract class for rabbit
+## Sprint 2 (15.05 - 15.45 (+10mins), 27 Jan 2020)
+* Created abstract class for rabbit
+  * Constructor and basic methods
 * Basic rabbit tests
+### Successes
+* Gained ideas
+* Started with code
+* Improved understanding of rabbit class
+* Learned new methods to test case
+* Improved team listening
+### Improvements
+* Lack of adhering to SOLID princliples (S)
+* Did not start testing in time
 
+## Sprint 3 (16.07 - 17.00, 27 Jan 2020)
