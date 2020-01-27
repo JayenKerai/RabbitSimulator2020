@@ -24,5 +24,5 @@ Rabbit simulation task
 
 ## Sprint 2 (15.05 - 15.45, 27 Jan 2020)
 * Creating abstract class for rabbit
-
+* Basic rabbit tests
 
