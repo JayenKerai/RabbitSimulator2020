@@ -23,6 +23,6 @@ Rabbit simulation task
 * Initially not working as a team
 
 ## Sprint 2 (15.05 - 15.45, 27 Jan 2020)
-
+* Creating abstract class for rabbit
 
 
