@@ -37,3 +37,11 @@ Rabbit simulation task
 * Did not start testing in time
 
 ## Sprint 3 (16.07 - 17.00, 27 Jan 2020)
+* Created rabbit lifecycle class, RabbitContainer class
+* Finished testing Rabbit class (checked isMature, gender)
+* Found fixes for some tested methods
+### Success
+* Adhered to SOLID principles better
+### Improvements
+* Should better team/pair programming practices
+* Would like to improve communicationi within sub-groups
