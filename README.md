@@ -1,6 +1,8 @@
 # RabbitSimulator2020
 Rabbit simulation task
 
+## Phase 1
+
 ## Sprint 0 (14.00 - 14.20, 27 Jan 2020)
 * Asked qns to Manish
 
