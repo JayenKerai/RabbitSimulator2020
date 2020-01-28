@@ -78,11 +78,12 @@ Rabbit simulation task
 ### Improvements
 * Did not look for grammatical errors
 
-## Sprint 7 (12.00 - 12.30, 28 Jan 2020)
+## Sprint 7 (12.00 - 12.45, 28 Jan 2020)
 * Basic code refactoring
 * Ensure entire group understands code
 ### Successes
 * Better understanding about the implementation of the project
 * Learning different approaches for tackling errors
+* Everyone understands code
 ### Improvements
 * Merge work regularly to avoid repetition
