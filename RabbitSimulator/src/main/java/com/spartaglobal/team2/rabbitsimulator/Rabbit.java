@@ -3,7 +3,7 @@ package com.spartaglobal.team2.rabbitsimulator;
 public abstract class Rabbit {
     private int age = 0; //age in months
     private boolean isMature = false;
-    private char gender;
+    private String gender;
 
     public Rabbit() {
     }
@@ -27,7 +27,7 @@ public abstract class Rabbit {
     public boolean isMature() {
         return isMature;
     }
-    public char getGender() {
+    public String getGender() {
         return gender;
     }
 
@@ -35,7 +35,7 @@ public abstract class Rabbit {
         isMature = mature;
     }
 
-    public void setGender(char gender) {
-        this.gender = gender;
+    public void setGender(String gender) {
+        this.gender = gender.toLowerCase();
     }
 }

@@ -32,13 +32,13 @@ public class AppTest {
         maleRabbit.increaseAge();
         maleRabbit.increaseAge();
         maleRabbit.increaseAge();
-        assertTrue(maleRabbit.isMature());
+        Assertions.assertEquals(true,maleRabbit.isMature());
     }
     @Test
     public void testThatRabbitIsNotMatureAfter2Months(){
         MaleRabbit maleRabbit = new MaleRabbit();
         maleRabbit.increaseAge();
         maleRabbit.increaseAge();
-        assertFalse(maleRabbit.isMature());
+        Assertions.assertEquals(false,maleRabbit.isMature());
     }
 }

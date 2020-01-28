@@ -1,14 +1,8 @@
 package com.spartaglobal.team2.rabbitsimulator;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        RabbitLifecycle rl = new RabbitLifecycle();
-
+    public static void main( String[] args ) throws InterruptedException {
+        UserInterface userInterface = new UserInterface(); //create an run UI
     }
 }
