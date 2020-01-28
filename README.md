@@ -96,11 +96,14 @@ Rabbit simulation task
 ### Improvements
 * Difficulty finding more tests to perform
 
-## Sprint 9 (14.30 - 15.30, 28 Jan 2020)
+## Sprint 9 (14.30 - 15.40 (+10mins), 28 Jan 2020)
 * Continue with tests
 * Refactor code
 * Fixing outOfMemory errors
 ### Successes
-
+* Good research performed
 ### Improvements
+* Communication between both groups
+
+## Sprint 10 (15.50 - 17.00, 28 Jan 2020)
 
