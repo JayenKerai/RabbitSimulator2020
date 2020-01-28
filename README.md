@@ -96,14 +96,20 @@ Rabbit simulation task
 ### Improvements
 * Difficulty finding more tests to perform
 
-## Sprint 9 (14.30 - 15.40 (+10mins), 28 Jan 2020)
+## Sprint 9 (14.30 - 15.50 (+10mins), 28 Jan 2020)
 * Continue with tests
 * Refactor code
 * Fixing outOfMemory errors
+* Discuss errors with Manish (Product Owner)
 ### Successes
 * Good research performed
 ### Improvements
 * Communication between both groups
 
-## Sprint 10 (15.50 - 17.00, 28 Jan 2020)
+## Sprint 10 (16.00 - 17.00, 28 Jan 2020)
+* Consider other methods to get around limited heap issues
+  * Implement methods to use text file
+  * Change relevant files to String format to be used as a row in the txt file
+### Successes
 
+### Improvements
