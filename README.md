@@ -57,10 +57,17 @@ Rabbit simulation task
 ### Improvements
 * Struggling to share code between teams when both teams are working on the same classes
 
-## Sprint 5 (10.30 - 11.25, Jan 2020)
-* Death counter
+## Sprint 5 (10.30 - 11.30, 28 Jan 2020)
+* Established gender equality amongst rabbits
 * Accept user input (console inputs)
 * Testing previous sprint 4 work
+* Removed "dead rabbits" array (Death counter implemented)
 ### Successes
-
+* Good support given to team members
 ### Improvements
+* Overran sprint by a few mins
+* Have not managed to kill rabbits after making changes to this implementation
+
+## Sprint 6 (11.35 - 12.00, 28 Jan 2020)
+* Finish/polish accepting user input
+* Complete killing rabbits
