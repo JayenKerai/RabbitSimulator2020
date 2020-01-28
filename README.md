@@ -47,3 +47,8 @@ Rabbit simulation task
 ### Improvements
 * Should better team/pair programming practices
 * Would like to improve communicationi within sub-groups
+
+## Sprint 4 (09.15 - 10.20, 28 Jan 2020)
+* Death of rabbits
+* Time management
+* Possible testing
