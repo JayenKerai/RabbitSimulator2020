@@ -78,7 +78,7 @@ Rabbit simulation task
 ### Improvements
 * Did not look for grammatical errors
 
-## Sprint 7 (12.00 - 12.45, 28 Jan 2020)
+## Sprint 7 (12.00 - 12.45 (+60mins), 28 Jan 2020)
 * Basic code refactoring
 * Ensure entire group understands code
 ### Successes
@@ -87,3 +87,11 @@ Rabbit simulation task
 * Everyone understands code
 ### Improvements
 * Merge work regularly to avoid repetition
+
+## Sprint 8 (13.50 - 14.30, 28 Jan 2020)
+* Write tests for all classes
+* Complete implementation for breeding rabbits
+### Successes
+
+### Improvements
+
