@@ -106,10 +106,11 @@ Rabbit simulation task
 ### Improvements
 * Communication between both groups
 
-## Sprint 10 (16.00 - 17.00, 28 Jan 2020)
+## Sprint 10 (16.00 - 18.00, 28 Jan 2020)
 * Consider other methods to get around limited heap issues
   * Implement methods to use text file
   * Change relevant files to String format to be used as a row in the txt file
 ### Successes
-
+* Learned a lot of stuffs
 ### Improvements
+* Need to know more stuff
