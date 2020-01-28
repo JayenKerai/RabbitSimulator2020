@@ -71,3 +71,13 @@ Rabbit simulation task
 ## Sprint 6 (11.35 - 12.00, 28 Jan 2020)
 * Finish/polish accepting user input
 * Complete killing rabbits
+### Successes
+* Finished all sprint tasks early
+### Improvements
+
+
+## Sprint 7 (12.00 - 12.30, 28 Jan 2020)
+*
+### Successes
+
+### Improvements
