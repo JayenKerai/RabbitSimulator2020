@@ -82,5 +82,7 @@ Rabbit simulation task
 * Basic code refactoring
 * Ensure entire group understands code
 ### Successes
-*
+* Better understanding about the implementation of the project
+* Learning different approaches for tackling errors
 ### Improvements
+* Merge work regularly to avoid repetation
