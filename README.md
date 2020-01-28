@@ -51,4 +51,4 @@ Rabbit simulation task
 ## Sprint 4 (09.15 - 10.20, 28 Jan 2020)
 * Death of rabbits
 * Time management
-* Possible testing
+* Updating and fixing code 
