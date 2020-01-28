@@ -85,4 +85,4 @@ Rabbit simulation task
 * Better understanding about the implementation of the project
 * Learning different approaches for tackling errors
 ### Improvements
-* Merge work regularly to avoid repetation
+* Merge work regularly to avoid repetition
