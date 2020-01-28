@@ -42,13 +42,25 @@ Rabbit simulation task
 * Created rabbit lifecycle class, RabbitContainer class
 * Finished testing Rabbit class (checked isMature, gender)
 * Found fixes for some tested methods
-### Success
+### Successes
 * Adhered to SOLID principles better
 ### Improvements
 * Should better team/pair programming practices
 * Would like to improve communicationi within sub-groups
 
-## Sprint 4 (09.15 - 10.20, 28 Jan 2020)
+## Sprint 4 (09.15 - 10.20 (+15mins), 28 Jan 2020)
 * Death of rabbits
-* Time management (increaseTime(), increaseRabbitAge())
+* Managing time (increaseTime(), increaseRabbitAge())
 * Updating and fixing code 
+### Successes
+* Worked well within sub-teams
+### Improvements
+* Struggling to share code between teams when both teams are working on the same classes
+
+## Sprint 5 (10.30 - 11.25, Jan 2020)
+* Death counter
+* Accept user input (console inputs)
+* Testing previous sprint 4 work
+### Successes
+
+### Improvements
