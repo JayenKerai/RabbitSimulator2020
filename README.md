@@ -92,6 +92,15 @@ Rabbit simulation task
 * Write tests for all classes
 * Complete implementation for breeding rabbits
 ### Successes
+* Progress made with breeding rabbits
+### Improvements
+* Difficulty finding more tests to perform
+
+## Sprint 9 (14.30 - 15.30, 28 Jan 2020)
+* Continue with tests
+* Refactor code
+* Fixing outOfMemory errors
+### Successes
 
 ### Improvements
 
