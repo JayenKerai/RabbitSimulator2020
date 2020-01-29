@@ -151,9 +151,32 @@ Rabbit simulation task
 ### Improvements
 * Other sub-team didn't include entire sub-team on tasks
 
-## Sprint 14 (13.45 - 29 Jan 2020)
+## Sprint 14 (13.45 - 15.00 29 Jan 2020)
 * Reformating the code in-order to merge the two parts of the projects
+* Make everything work within a text file instead of a rabbit object
+### Successes
+* 
+### Improvement
+
+
+
+## Sprint 15 (- 29 Jan 2020)
+*
 * 
 ### Successes
 * 
 ### Improvement
+
+
+
+
+
+## Sprint 16 (- 29 Jan 2020)
+*
+* 
+### Successes
+* 
+### Improvement
+
+
+
