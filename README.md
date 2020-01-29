@@ -155,14 +155,16 @@ Rabbit simulation task
 * Reformating the code in-order to merge the two parts of the projects
 * Make everything work within a text file instead of a rabbit object
 ### Successes
-* 
+* Implemented file for storing dead rabbits
+* Succesfully got environement for incrementing time to work with the new program
+* Implemented a file cleaner
+* Getters created for number of rabbits (for each gender) and number of dead rabbits
 ### Improvement
+* Mainly one person coded while others researched or observed for understanding - need more involvement from the team with code production
 
-
-
-## Sprint 15 (- 29 Jan 2020)
-*
-* 
+## Sprint 15 (15:30 16:15 - 29 Jan 2020)
+* Implement breeding with new program
+* Implement requirements from phase 2 with the new program 
 ### Successes
 * 
 ### Improvement
