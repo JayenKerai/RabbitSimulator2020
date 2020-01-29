@@ -166,16 +166,13 @@ Rabbit simulation task
 * Implement breeding with new program
 * Implement requirements from phase 2 with the new program 
 ### Successes
-* 
+* Sucessfully got program to store dead rabbits and live rabbits in the correct files
 ### Improvement
-
-
-
-
+* Need more involvment from the extended team - difficult to coordinate as interviews are in progress
 
 ## Sprint 16 (- 29 Jan 2020)
-*
-* 
+* Implement breeding with new program
+* Continue to implement requirements from phase 2 
 ### Successes
 * 
 ### Improvement
