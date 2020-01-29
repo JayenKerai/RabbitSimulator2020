@@ -129,7 +129,7 @@ Rabbit simulation task
 * Ensuring entire sub-team is communicating
   * Poor environment choice (difficult to speak aloud to entire team in quiet environment)
 
-## Sprint 12 (10.15 - , 29 Jan 2020)
+## Sprint 12 (10.35 - 11.30, 29 Jan 2020)
 * Continue on work with phase 2 (ensure a working prototype is available)
 * Continue attempting to implement text file as memory
 ### Successes
