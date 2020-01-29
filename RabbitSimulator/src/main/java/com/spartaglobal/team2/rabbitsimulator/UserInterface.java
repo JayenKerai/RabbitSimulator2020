@@ -27,5 +27,3 @@ public class UserInterface {
         System.out.println("There are " + rl.getDeathToll() + " dead rabbits");
     }
 }
-
-
