@@ -131,14 +131,19 @@ Rabbit simulation task
 
 ## Sprint 12 (10.35 - 11.30, 29 Jan 2020)
 * Continue on work with phase 2 (ensure a working prototype is available)
+* Implemented tests for older code (phase 2)
 * Continue attempting to implement text file as memory
 ### Successes
-
+* Managed to implement tests for phase 2
+* Improved communication within sub-groups
+* Improved comprehension of task for new code
 ### Improvements
+* Need a longer sprint to complete larger tasks
+* Prioritise sub-tasks better
 
-
-## Sprint 13 ( - , 29 Jan 2020)
-* 
+## Sprint 13 (11.30 - 12.30, 29 Jan 2020)
+* Testing and improving older code (phase 2)
+* Continuing work on implementing text files
 ### Successes
 
 ### Improvements
