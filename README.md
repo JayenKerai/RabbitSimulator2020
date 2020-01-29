@@ -150,3 +150,10 @@ Rabbit simulation task
 * One sub-team worked well together
 ### Improvements
 * Other sub-team didn't include entire sub-team on tasks
+
+## Sprint 14 (13.45 - 29 Jan 2020)
+* Reformating the code in-order to merge the two parts of the projects
+* 
+### Successes
+* 
+### Improvement
