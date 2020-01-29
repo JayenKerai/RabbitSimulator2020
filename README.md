@@ -114,3 +114,11 @@ Rabbit simulation task
 * Learned a lot of stuffs
 ### Improvements
 * Need to know more stuff
+
+## Sprint 11 (9.22 - 10.15, 29 Jan 2020)
+* Looked over code adjustments and fixes made between sprint 10 and 11 (reading/writing to text files)
+* One sub-team working on improving old code
+* One sub-team working on new code
+### Successes
+
+### Improvements
