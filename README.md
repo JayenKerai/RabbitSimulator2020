@@ -145,5 +145,8 @@ Rabbit simulation task
 * Testing and improving older code (phase 2)
 * Continuing work on implementing text files
 ### Successes
-
+* Managed to successfully implement increaseAge() using text files
+  * Learned more about file writing/reading - will help with implementing next methods
+* One sub-team worked well together
 ### Improvements
+* Other sub-team didn't include entire sub-team on tasks
