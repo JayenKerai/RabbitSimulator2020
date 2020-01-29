@@ -117,16 +117,21 @@ Rabbit simulation task
 
 ## Sprint 11 (9.22 - 10.15, 29 Jan 2020)
 * Looked over code adjustments and fixes made between sprint 10 and 11 (reading/writing to text files)
-* One sub-team working on improving old code
+* One sub-team working on older code (starting phase 2)
+  * Ensuring code only allows males to breed with one female rabbit per month
+  * Female rabbits have 50% chance of pregnancy per month
 * One sub-team working on new code
 ### Successes
-
+* Good progress with phase 2 for old code
+  * Phase 2 almost complete
+* Work was divided well
 ### Improvements
-
-
+* Ensuring entire sub-team is communicating
+  * Poor environment choice (difficult to speak aloud to entire team in quiet environment)
 
 ## Sprint 12 (10.15 - , 29 Jan 2020)
-* 
+* Continue on work with phase 2 (ensure a working prototype is available)
+* Continue attempting to implement text file as memory
 ### Successes
 
 ### Improvements
