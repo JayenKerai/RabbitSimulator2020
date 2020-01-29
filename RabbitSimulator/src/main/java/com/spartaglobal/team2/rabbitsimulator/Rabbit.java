@@ -4,6 +4,7 @@ public abstract class Rabbit {
     private int age = 0; //age in months
     private boolean isMature = false;
     private String gender;
+    private boolean isPregnant = false;
 
     public Rabbit() {
     }
@@ -20,7 +21,9 @@ public abstract class Rabbit {
             this.isMature = true;
         }
     }
-
+    public boolean isPregnant() {
+        return isPregnant;
+    }
     public int getAge() {
         return age;
     }
@@ -34,8 +37,10 @@ public abstract class Rabbit {
     public void setMature(boolean mature) {
         isMature = mature;
     }
-
     public void setGender(String gender) {
         this.gender = gender.toLowerCase();
+    }
+    public void setPregnant(boolean pregnant) {
+        isPregnant = pregnant;
     }
 }
