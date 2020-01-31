@@ -204,16 +204,22 @@ Rabbit simulation task
 * Refactor code
 * Fix Errors
 * Start on presentation
+  * Presentation planning
+  * Slide design
 * Write tests
 ### Successes
 * Product owner gave positive feedback
 * Code effieciency increased
+* Good breakdown of objectives
 ### Improvements
 * Need to write more tests
+* Laptop battery dying
 
 ## Sprint 20 (11.30 - 12.30, 31 Jan 2020)
 * Add lots of tests
 * *(Update work profiles)*
+* Presentation slides
+* Planning talk topics
 ### Successes
 
 ### Improvements
