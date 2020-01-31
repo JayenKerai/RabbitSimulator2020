@@ -187,4 +187,9 @@ Rabbit simulation task
 ### Improvements
 * Difficult to stop working after starting (lack of sleep and food)
 
-## Sprint 18 (9:15 - 
+## Sprint 18 (9:15 - 10.00, 31 Jan 2020)
+* Explain the code to the group
+### Successes
+* Every memember in the group has better understanding of the project
+* Finding simple errors while reviewing the code
+### Improvement
