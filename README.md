@@ -217,7 +217,6 @@ Rabbit simulation task
 
 ## Sprint 20 (11.30 - 12.40, 31 Jan 2020)
 * Add lots of tests
-* *(Update work profiles)*
 * Presentation slides
 * Planning talk topics
 ### Successes
