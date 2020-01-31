@@ -151,7 +151,7 @@ Rabbit simulation task
 ### Improvements
 * Other sub-team didn't include entire sub-team on tasks
 
-## Sprint 14 (13.45 - 15.00 29 Jan 2020)
+## Sprint 14 (13.45 - 15.00, 29 Jan 2020)
 * Reformating the code in-order to merge the two parts of the projects
 * Make everything work within a text file instead of a rabbit object
 ### Successes
@@ -162,7 +162,7 @@ Rabbit simulation task
 ### Improvement
 * Mainly one person coded while others researched or observed for understanding - need more involvement from the team with code production
 
-## Sprint 15 (15:30 16:15 - 29 Jan 2020)
+## Sprint 15 (15.30 - 16.15, 29 Jan 2020)
 * Implement breeding with new program
 * Implement requirements from phase 2 with the new program 
 ### Successes
@@ -170,7 +170,7 @@ Rabbit simulation task
 ### Improvement
 * Need more involvment from the extended team - difficult to coordinate as interviews are in progress
 
-## Sprint 16 (16:15 - 29 Jan 2020)
+## Sprint 16 (16.15 - 17.15, 29 Jan 2020)
 * Implement breeding with new program
 * Continue to implement requirements from phase 2 
 ### Successes
@@ -192,4 +192,15 @@ Rabbit simulation task
 ### Successes
 * Every memember in the group has better understanding of the project
 * Finding simple errors while reviewing the code
-### Improvement
+### Improvements
+* Errors need to be addressed
+
+## Sprint 19 (10:20 - 11.30, 31 Jan 2020)
+* Demonstrate program to Manish and Richard
+* Refactor code
+* Fix Errors
+* Start on presentation
+* Write tests
+### Successes
+
+### Improvements
