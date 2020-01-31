@@ -11,7 +11,7 @@ Rabbit simulation task
 * Created user stories:
   * US1: As a User I want to give a time period of the simulation so that I know how many Rabbits are alive at the end of the simulation.
   * US2: As a User I want to know how many rabbits have died by the end of the simulation so that I can analyse how many have died in the time period I have given.
-  * US3: As a User I want to know how many male and female rabbits are alive at the end of the simulation so that I can analyse the  characteristics of the rabbits that are alive.
+  * US3: As a User I want to know how many male and female rabbits are alive at the end of the simulation so that I can analyse the characteristics of the rabbits that are alive.
   * US4: As a User I want to know the average age of live Rabbits by the end of the simulation so that I can analyse the characteristics of the rabbits that are alive.
 * Created high level tasks for backlog
 * Created Trello board
@@ -21,7 +21,7 @@ Rabbit simulation task
 * Able to derive task backlog using user stories
 * Organised with what tasks were completed by whom
 ### Improvements
-* Communication - talked over eachother
+* Communication - talked over each-other
 * Initially not working as a team
 
 ## Sprint 2 (15.05 - 15.45 (+10mins), 27 Jan 2020)
@@ -35,7 +35,7 @@ Rabbit simulation task
 * Learned new methods to test case
 * Improved team listening
 ### Improvements
-* Lack of adhering to SOLID princliples (S)
+* Lack of adhering to SOLID principles (S)
 * Did not start testing in time
 
 ## Sprint 3 (16.07 - 17.00, 27 Jan 2020)
@@ -74,7 +74,7 @@ Rabbit simulation task
 * Complete long-term backlog
 ### Successes
 * Finished all sprint tasks early
-* Basic refactoring/mergeing code
+* Basic refactoring/merging code
 ### Improvements
 * Did not look for grammatical errors
 
@@ -132,7 +132,7 @@ Rabbit simulation task
   * Poor environment choice (difficult to speak aloud to entire team in quiet environment)
 
 ## Sprint 12 (10.35 - 11.30, 29 Jan 2020)
-* Continue on work with phase 2 (ensure a working prototype is available)
+* Continue work with phase 2 (ensure a working prototype is available)
 * Implemented tests for older code (phase 2)
 * Continue attempting to implement text file as memory
 ### Successes
@@ -154,11 +154,11 @@ Rabbit simulation task
 * Other sub-team didn't include entire sub-team on tasks
 
 ## Sprint 14 (13.45 - 15.00, 29 Jan 2020)
-* Reformating the code in-order to merge the two parts of the projects
+* Reformatting the code in-order to merge the two parts of the projects
 * Make everything work within a text file instead of a rabbit object
 ### Successes
 * Implemented file for storing dead rabbits
-* Succesfully got environement for incrementing time to work with the new program
+* Successfully got environment for incrementing time to work with the new program
 * Implemented a file cleaner
 * Getters created for number of rabbits (for each gender) and number of dead rabbits
 ### Improvement
@@ -168,9 +168,9 @@ Rabbit simulation task
 * Implement breeding with new program
 * Implement requirements from phase 2 with the new program 
 ### Successes
-* Sucessfully got program to store dead rabbits and live rabbits in the correct files
+* Successfully got program to store dead rabbits and live rabbits in the correct files
 ### Improvement
-* Need more involvment from the extended team - difficult to coordinate as interviews are in progress
+* Need more involevment from the extended team - difficult to coordinate as interviews are in progress
 
 ## Sprint 16 (16.15 - 17.15, 29 Jan 2020)
 * Implement breeding with new program
@@ -194,7 +194,7 @@ Rabbit simulation task
 ## Sprint 18 (9:15 - 10.00, 31 Jan 2020)
 * Explain the code to the group
 ### Successes
-* Every memember in the group has better understanding of the project
+* Every member in the group has better understanding of the project
 * Finding simple errors while reviewing the code
 ### Improvements
 * Errors need to be addressed
@@ -209,17 +209,21 @@ Rabbit simulation task
 * Write tests
 ### Successes
 * Product owner gave positive feedback
-* Code effieciency increased
+* Code efficiency increased
 * Good breakdown of objectives
 ### Improvements
 * Need to write more tests
 * Laptop battery dying
 
-## Sprint 20 (11.30 - 12.30, 31 Jan 2020)
+## Sprint 20 (11.30 - 12.40, 31 Jan 2020)
 * Add lots of tests
 * *(Update work profiles)*
 * Presentation slides
 * Planning talk topics
 ### Successes
-
+* Completed tests
+* Achieved 70% test coverage
+* Great teamwork
 ### Improvements
+* Code structure
+* Could have structured thinking better before implementing test
