@@ -1,7 +1,7 @@
 # RabbitSimulator2020
 Rabbit simulation task
 
-## Phase 1
+## ----- Phase 1 -----
 
 ## Sprint 0 (14.00 - 14.20, 27 Jan 2020)
 * Asked qns to Manish
@@ -46,7 +46,7 @@ Rabbit simulation task
 * Adhered to SOLID principles better
 ### Improvements
 * Should better team/pair programming practices
-* Would like to improve communicationi within sub-groups
+* Would like to improve communication within sub-groups
 
 ## Sprint 4 (09.15 - 10.20 (+15mins), 28 Jan 2020)
 * Death of rabbits
@@ -115,6 +115,8 @@ Rabbit simulation task
 ### Improvements
 * Need to know more stuff
 
+## ----- Phase 2 -----
+
 ## Sprint 11 (9.22 - 10.15, 29 Jan 2020)
 * Looked over code adjustments and fixes made between sprint 10 and 11 (reading/writing to text files)
 * One sub-team working on older code (starting phase 2)
@@ -178,6 +180,8 @@ Rabbit simulation task
 ### Improvement
 * Struggling to finish goals
 
+## ----- Phase 3 -----
+
 ## Sprint 17 (06:00 - 23:30, 30 Jan 2020)
 * Implemented rabbit breeding
 * Implemented fox breeding
@@ -201,6 +205,15 @@ Rabbit simulation task
 * Fix Errors
 * Start on presentation
 * Write tests
+### Successes
+* Product owner gave positive feedback
+* Code effieciency increased
+### Improvements
+* Need to write more tests
+
+## Sprint 20 (11.30 - 12.30, 31 Jan 2020)
+* Add lots of tests
+* *(Update work profiles)*
 ### Successes
 
 ### Improvements
