@@ -1,44 +1,36 @@
 package com.spartaglobal.team2.rabbitsimulator;
+import com.spartaglobal.team2.rabbitsimulator.Rabbits.AddNewRabbit;
+import com.spartaglobal.team2.rabbitsimulator.Rabbits.RabbitDataRetriever;
+import com.spartaglobal.team2.rabbitsimulator.Rabbits.RabbitUpdater;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.IOException;
+
 /**
  * Unit test for simple App.
  */
 public class AppTest {
-    @Test
-    public void testThatMaleRabbitHasMaleGender() {
-        MaleRabbit maleRabbit = new MaleRabbit();
-        Assertions.assertEquals('m', maleRabbit.getGender());
+    RabbitUpdater rabbitUpdater = new RabbitUpdater();
+    AddNewRabbit addNewRabbit = new AddNewRabbit("text\\TotalRabbits.txt");
+    EnvironmentController environmentController = new EnvironmentController();
+    RabbitDataRetriever rabbitDataRetriever = new RabbitDataRetriever();
+
+    public AppTest() throws IOException {
     }
-    @Test
-    public void testThatFemaleRabbitHasFemaleGender() {
-        FemaleRabbit femaleRabbit = new FemaleRabbit();
-        Assertions.assertEquals('f', femaleRabbit.getGender());
+
+    @BeforeEach
+    public void initialCode() throws IOException, InterruptedException {
+        rabbitUpdater.totalRabbitFileCleaner();
+        addNewRabbit.createRabbit("m");
+        addNewRabbit.createRabbit("f");
+        //int input = 59;
+        //environmentController.increaseTimeWithoutBirth(input);
     }
+
     @Test
-    public void testThatMaleRabbitHasMaleGenderUpperCase() {
-        MaleRabbit maleRabbit = new MaleRabbit();
-        Assertions.assertEquals('M', maleRabbit.getGender());
-    }
-    @Test
-    public void testThatFemaleRabbitHasFemaleGenderUpperCase() {
-        FemaleRabbit femaleRabbit = new FemaleRabbit();
-        Assertions.assertEquals('F', femaleRabbit.getGender());
-    }
-    @Test
-    public void testThatRabbitIsMatureAfter3Months() {
-        MaleRabbit maleRabbit = new MaleRabbit();
-        maleRabbit.increaseAge();
-        maleRabbit.increaseAge();
-        maleRabbit.increaseAge();
-        Assertions.assertEquals(true,maleRabbit.isMature());
-    }
-    @Test
-    public void testThatRabbitIsNotMatureAfter2Months(){
-        MaleRabbit maleRabbit = new MaleRabbit();
-        maleRabbit.increaseAge();
-        maleRabbit.increaseAge();
-        Assertions.assertEquals(false,maleRabbit.isMature());
+    void testTheCorrectAmountOfRabbitsHaveDied() throws IOException {
+        Assertions.assertEquals(2, rabbitDataRetriever.getNumOfRabbits());  //Check if there are two rabbits
     }
 }
