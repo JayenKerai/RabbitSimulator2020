@@ -176,6 +176,15 @@ Rabbit simulation task
 ### Successes
 * 
 ### Improvement
+* Struggling to finish goals
 
+## Sprint 17 (06:00 - 23:30, 30 Jan 2020)
+* Implemented rabbit breeding
+* Implemented fox breeding
+* Phase 3 completed
+### Successes
+* Lots of work completed
+### Improvements
+* Difficult to stop working after starting (lack of sleep and food)
 
-
+## Sprint 18 (9:15 - 
