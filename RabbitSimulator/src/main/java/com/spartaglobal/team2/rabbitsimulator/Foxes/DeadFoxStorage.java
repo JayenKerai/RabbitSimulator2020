@@ -10,6 +10,4 @@ public class DeadFoxStorage {
     public void incrementDeadFoxes() {
         deadFoxCounter++;
     }
-
-
 }

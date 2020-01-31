@@ -1,5 +1,4 @@
 package com.spartaglobal.team2.rabbitsimulator.Foxes;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,8 +13,7 @@ public class FoxUpdater {
         tempFileCleaner();
     }
 
-    public void incrementAge() throws IOException {
-
+    public void incrementAge(int foxBreedPerYear) throws IOException {
         FileWriter tempFileWriter = new FileWriter(temp, true);
         FileReader tempFileReader = new FileReader(temp);
 
@@ -32,38 +30,35 @@ public class FoxUpdater {
 
         tempFileCleaner();
         long matureMaleFoxCount = FoxDataRetriever.getNumOfMatureFoxes("m"); //get number of male foxes (cant impregnate more than this number of females)
-        long pregnantFemaleCount = 0;
 
         String line;
         while ((line = bufferedTotalFoxesReader.readLine()) != null) { //do for each fox
-
             String[] array = line.split(", ");
+            int ageIncrementer = Integer.parseInt(array[0]);
+            ageIncrementer++; //increment age for fox
 
-            int i = Integer.parseInt(array[0]);
-            i++; //increment age for fox
-
-            if (i < 60) { // if the foxes age is less than 60
-
+            if (ageIncrementer < 60) { // if the foxes age is less than 60
                 // set maturity to true when older than 2
-                if (i > 9) {
+                if (ageIncrementer > 9) {
                     array[2] = "true";
                 }
+                if (array[1].equals("f")) {
+                    // this method comes before setting pregnant to ensure foxes dont give birth immediately
+                    if (array[3].equals("true")) { //if a foxes is pregnant and is female
+                        giveBirth(); //create a new fox\
+                        array[3] = "false"; //set fox to no longer pregnant
+                    }
 
-                // this method comes before setting pregnant to ensure foxes dont give birth immediately
-                if (array[3].equals("true") && array[1].equals("f")) { //if a foxes is pregnant and is female
-                    giveBirth(); //create a new fox\
-                    array[3] = "false"; //set fox to no longer pregnant
+                    if(foxBreedPerYear == 0) {
+                        // if there are still unmated mature males, and this fox is a mature female
+                        if ((matureMaleFoxCount > 0) && array[2].equals("true")) {
+                            array[3] = "true";
+                            matureMaleFoxCount--;
+                        }
+                    }
                 }
-
-                // if there are still unmated mature males, and this fox is a mature female
-                if ((pregnantFemaleCount <= matureMaleFoxCount) && array[1].equals("f") && array[2].equals("true")) {
-                    array[3] = "true";
-                    pregnantFemaleCount++;
-                }
-
-                bufferedTempWriter.write(i + ", " + array[1] + ", " + array[2] + ", " + array[3]); // age, gender, maturity, pregnant
+                bufferedTempWriter.write(ageIncrementer + ", " + array[1] + ", " + array[2] + ", " + array[3]); // age, gender, maturity, pregnant
                 bufferedTempWriter.newLine();
-
             } else {
                 deadFoxStorage.incrementDeadFoxes();// if foxes are > 59, increment the counter
             }
@@ -78,7 +73,6 @@ public class FoxUpdater {
         }
         bufferedTempReader.close();
         bufferedTotalFoxesWriter.close();
-
     }
 
     private void giveBirth() throws IOException {

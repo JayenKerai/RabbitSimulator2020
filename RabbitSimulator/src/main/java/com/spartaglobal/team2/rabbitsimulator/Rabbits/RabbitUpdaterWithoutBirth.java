@@ -1,3 +1,4 @@
+/*
 package com.spartaglobal.team2.rabbitsimulator.Rabbits;
 
 import java.io.*;
@@ -84,3 +85,4 @@ public class RabbitUpdaterWithoutBirth {
     }
 }
 
+*/

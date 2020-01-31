@@ -38,7 +38,6 @@ public class RabbitUpdaterWithBirthWithoutDeath {
 
         tempFileCleaner();
         long matureMaleRabbitCount = rabbitDataRetriever.getNumOfMatureRabbits("m"); //get number of male rabbits (cant impregnate more than this number of females)
-        long pregnantFemaleCount = 0;
 
         String line;
         long rabbitsToKill = FoxDataRetriever.getNumberOfRabbitsToBeKilledByFoxes();
@@ -56,16 +55,18 @@ public class RabbitUpdaterWithBirthWithoutDeath {
                     array[2] = "true";
                 }
 
-                // this method comes before setting pregnant to ensure rabbits dont give birth immediately
-                if (array[3].equals("true") && array[1].equals("f")) { //if a rabbit is pregnant and is female
-                    giveBirth(); //create a new rabbit
-                    array[3] = "false"; //set rabbit to no longer pregnant
-                }
+                if(array[1].equals("f")) {
+                    // this method comes before setting pregnant to ensure rabbits dont give birth immediately
+                    if (array[3].equals("true")) { //if a rabbit is pregnant and is female
+                        giveBirth(); //create a new rabbit
+                        array[3] = "false"; //set rabbit to no longer pregnant
+                    }
 
-                // if there are still unmated mature males, and this rabbit is a mature female
-                if ((pregnantFemaleCount <= matureMaleRabbitCount) && array[1].equals("f") && array[2].equals("true")) {
-                    array[3] = "true";
-                    pregnantFemaleCount++;
+                    // if there are still unmated mature males, and this rabbit is a mature female
+                    if ((matureMaleRabbitCount > 0) && array[2].equals("true")) {
+                        array[3] = "true";
+                        matureMaleRabbitCount--;
+                    }
                 }
                 bufferedTempWriter.write(i + ", " + array[1] + ", " + array[2] + ", " + array[3]); // age, gender, maturity, pregnant
                 bufferedTempWriter.newLine();

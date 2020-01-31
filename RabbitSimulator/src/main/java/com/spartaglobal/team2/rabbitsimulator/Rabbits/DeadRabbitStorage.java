@@ -1,8 +1,8 @@
 package com.spartaglobal.team2.rabbitsimulator.Rabbits;
 
 public class DeadRabbitStorage {
-    static private int deadRabbitsCounter;
-    static private int rabbitsKilledByFoxes;
+    static private int deadRabbitsCounter=0;
+    static private int rabbitsKilledByFoxes=0;
 
     public static int getRabbitsKilledByFoxes() {
         return rabbitsKilledByFoxes;

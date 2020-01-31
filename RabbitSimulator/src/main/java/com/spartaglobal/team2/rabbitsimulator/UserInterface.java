@@ -60,21 +60,24 @@ public class UserInterface {
         RabbitDataRetriever rabbitDataRetriever = new RabbitDataRetriever();
         FoxDataRetriever foxDataRetriever = new FoxDataRetriever();
 
-        System.out.println();
+        //System.out.println();
         System.out.println("----- End Of Simulation Report -----");
         System.out.println();
-        System.out.println("total alive rabbits:        " + rabbitDataRetriever.getNumOfRabbits());
-        System.out.println("  male:                     " + rabbitDataRetriever.getNumOfRabbits("m"));
-        System.out.println("  female:                   " + rabbitDataRetriever.getNumOfRabbits("f"));
-        System.out.println("total dead rabbits:         " + rabbitDataRetriever.getNumOfDeadRabbits());
-        System.out.println("  killed by foxes:          " + DeadRabbitStorage.getRabbitsKilledByFoxes());
-        System.out.println("  death by old age:         " + (rabbitDataRetriever.getNumOfDeadRabbits() - DeadRabbitStorage.getRabbitsKilledByFoxes()));
+        System.out.println("Number of rabbits alive:    " + rabbitDataRetriever.getNumOfRabbits());
+        System.out.println("  Male:                     " + rabbitDataRetriever.getNumOfRabbits("m"));
+        System.out.println("  Female:                   " + rabbitDataRetriever.getNumOfRabbits("f"));
+        System.out.println("Number of dead rabbits:     " + rabbitDataRetriever.getNumOfDeadRabbits());
+        System.out.println("  Killed by foxes:          " + DeadRabbitStorage.getRabbitsKilledByFoxes());
+        System.out.println("  Death by old age:         " + (rabbitDataRetriever.getNumOfDeadRabbits() - DeadRabbitStorage.getRabbitsKilledByFoxes()));
 
         System.out.println();
 
-        System.out.println("total alive foxes:          " + foxDataRetriever.getNumOfFoxes());
-        System.out.println("  male:                     " + foxDataRetriever.getNumOfFoxes("m"));
-        System.out.println("  female:                   " + foxDataRetriever.getNumOfFoxes("f"));
-        System.out.println("total dead foxes:           " + foxDataRetriever.getNumOfDeadFoxes());
+        System.out.println("Total alive foxes:          " + foxDataRetriever.getNumOfFoxes());
+        System.out.println("  Male:                     " + foxDataRetriever.getNumOfFoxes("m"));
+        System.out.println("  Female:                   " + foxDataRetriever.getNumOfFoxes("f"));
+        System.out.println("Total dead foxes:           " + foxDataRetriever.getNumOfDeadFoxes());
+
+        rabbitUpdater.totalRabbitFileCleaner(); //cleans TotalRabbits file so that code can execute without previous run's data
+        foxUpdater.totalFoxesFileCleaner();
     }
 }

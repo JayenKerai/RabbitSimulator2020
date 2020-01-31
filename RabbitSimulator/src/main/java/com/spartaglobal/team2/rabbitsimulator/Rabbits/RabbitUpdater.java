@@ -9,11 +9,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class RabbitUpdater {
-
     File totalRabbits = new File("text\\TotalRabbits.csv");
     File temp = new File("text\\Temp.csv");
     DeadRabbitStorage deadRabbitStorage = new DeadRabbitStorage();
-
 
     public RabbitUpdater() throws IOException {
         //totalRabbitFileCleaner();
@@ -21,7 +19,6 @@ public class RabbitUpdater {
     }
 
     public void incrementAge() throws IOException {
-
         FileWriter tempFileWriter = new FileWriter(temp, true);
         FileReader tempFileReader = new FileReader(temp);
 
@@ -38,38 +35,38 @@ public class RabbitUpdater {
 
         tempFileCleaner();
         long matureMaleRabbitCount = rabbitDataRetriever.getNumOfMatureRabbits("m"); //get number of male rabbits (cant impregnate more than this number of females)
-        long pregnantFemaleCount = 0;
 
         String line;
         long rabbitsToKill = FoxDataRetriever.getNumberOfRabbitsToBeKilledByFoxes();
-        long totalNoOfLines = rabbitDataRetriever.getNumOfRabbits(); //number of lines in file
-        long lineCount = 0;
+        //long totalNoOfLines = rabbitDataRetriever.getNumOfRabbits(); //number of lines in file
         while ((line = bufferedTotalRabbitsReader.readLine()) != null) { //do for each rabbit
             String[] array = line.split(", ");
-            if (((rabbitsToKill < 0) || (lineCount <= totalNoOfLines / 2))) {//&& !(rabbitsToKill >= totalNoOfLines/2)) {/*&& (lineCount <= totalNoOfLines / 2)){*/  // foxes can kill rabbits if counter is not 0
+            if (((rabbitsToKill < 0))) {//&& !(rabbitsToKill >= totalNoOfLines/2)) {/*&& (lineCount <= totalNoOfLines / 2)){*/  // foxes can kill rabbits if counter is not 0
 
-                int i = Integer.parseInt(array[0]);
-                i++; //increment age for rabbit
+                int ageIncrementer = Integer.parseInt(array[0]);
+                ageIncrementer++; //increment age for rabbit
 
-                if (i < 60) { // if the rabbits age is less than 60
+                if (ageIncrementer < 60) { // if the rabbits age is less than 60
 
                     // set maturity to true when older than 2
-                    if (i > 2) {
+                    if (ageIncrementer > 2) {
                         array[2] = "true";
                     }
 
-                    // this method comes before setting pregnant to ensure rabbits dont give birth immediately
-                    if (array[3].equals("true") && array[1].equals("f")) { //if a rabbit is pregnant and is female
-                        giveBirth(); //create a new rabbit
-                        array[3] = "false"; //set rabbit to no longer pregnant
-                    }
+                    if (array[1].equals("f")) {
+                        // this method comes before setting pregnant to ensure rabbits dont give birth immediately
+                        if (array[3].equals("true")) { //if a rabbit is pregnant and is female
+                            giveBirth(); //create a new rabbit
+                            array[3] = "false"; //set rabbit to no longer pregnant
+                        }
 
-                    // if there are still unmated mature males, and this rabbit is a mature female
-                    if ((pregnantFemaleCount <= matureMaleRabbitCount) && array[1].equals("f") && array[2].equals("true")) {
-                        array[3] = "true";
-                        pregnantFemaleCount++;
+                        // if there are still unmated mature males, and this rabbit is a mature female
+                        if ((matureMaleRabbitCount > 0) && array[2].equals("true")) {
+                            array[3] = "true";
+                            matureMaleRabbitCount--;
+                        }
                     }
-                    bufferedTempWriter.write(i + ", " + array[1] + ", " + array[2] + ", " + array[3]); // age, gender, maturity, pregnant
+                    bufferedTempWriter.write(ageIncrementer + ", " + array[1] + ", " + array[2] + ", " + array[3]); // age, gender, maturity, pregnant
                     bufferedTempWriter.newLine();
                 } else {
                     deadRabbitStorage.incrementDeadRabbits(); // if rabbits are > 59mo, increment the counter
@@ -79,13 +76,10 @@ public class RabbitUpdater {
                 deadRabbitStorage.incrementKilledRabbits();
                 rabbitsToKill--;
             }
-            lineCount++;
-
         }
         bufferedTotalRabbitsReader.close();
         bufferedTempWriter.close();
         totalRabbitFileCleaner();
-
 
         while ((line = bufferedTempReader.readLine()) != null) { // writing back from temp to rabbit file
             bufferedTotalRabbitsWriter.write(line);
@@ -93,7 +87,6 @@ public class RabbitUpdater {
         }
         bufferedTempReader.close();
         bufferedTotalRabbitsWriter.close();
-
     }
 
     private void giveBirth() throws IOException {

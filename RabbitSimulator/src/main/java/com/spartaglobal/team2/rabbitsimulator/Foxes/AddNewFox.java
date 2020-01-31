@@ -26,8 +26,6 @@ public class AddNewFox {
         } else {
             System.out.println("Select m or f");
         }
-
         bufferedWriter.close(); // Close the stream
     }
 }
-
